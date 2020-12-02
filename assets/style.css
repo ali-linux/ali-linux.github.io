@@ -395,6 +395,78 @@ li {
     color: #a8a8a8;
 }
 
+#navbar .active {
+    background: var(--primary-color);
+}
+
+
+/* registration */
+
+#registration {
+    height: 2000px;
+}
+
+#sign-in {
+    height: 600px
+}
+
+#sign-up {
+    height: 500px;
+}
+
+#registration .container,
+#sign-in .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration {
+    padding: 30px;
+    width: 600px;
+    height: 350px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up #sign-up-form {
+    height: 1650px;
+}
+
+.registration label {
+    padding: 20px 0;
+}
+
+.registration input {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-bottom: solid 4px var(--primary-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.registration ::placeholder {
+    background: var(--white-color);
+}
+
+.registration div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration div button {
+    padding: 7px 25px;
+    border-radius: 10px;
+    border: 3px solid var(--primary-color);
+}
+
+.registration div a {
+    color: var(--primary-color);
+}
+
 
 /* FOOTER */
 

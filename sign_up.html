@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>assingment</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <header>
+        <div class="border-primary"></div>
+
+        <div class="logo-name">
+            <div class="container">
+                <span class="logo"></span>
+                <h1>Ali srwsht Ali Group - A</h1>
+            </div>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="container">
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Layout Design<i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <a href="layout_float.html">layout float</a>
+                            <a href="layout_flex.html">layout flex</a>
+                            <a href="layout_grid.html">layout grid</a>
+                        </ul>
+                    </div>
+                </div>
+                <li><a href="sign_in.html">Sign in</a></li>
+                <li class="active"><a href="sign_up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="registration" class="sign-up">
+        <div class="container">
+            <h1 class="align-center m-bottom-30 m-top-30">Sign Up</h1>
+
+            <form action="#" method="POST" id="sign-up-form" class="registration ">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username">
+
+                <label for="username">Full Name</label>
+                <input type="text" placeholder="Full name">
+
+                <label for="email">email</label>
+                <input type="email" placeholder="email">
+
+                <label for="Telephone">Telephone</label>
+                <input type="tel" placeholder="Telephone">
+
+                <label for="password">password</label>
+                <input type="password" placeholder="password">
+
+                <label for="Date of birth">Date of birth</label>
+                <input type="date">
+
+                <label for="color">Profile Color</label>
+                <input type="color">
+                <div class="radio">
+                    <h4>gender</h4>
+                    <input type="radio" id="Single" name="gender" value="Single">
+                    <label for="male">Single</label><br>
+                    <input type="radio" id="Married" name="gender" value="Married">
+                    <label for="Married">Married</label><br>
+                    <input type="radio" id="it-is-private" name="gender" value="it is private">
+                    <label for="it is private">it is private</label>
+                </div>
+                <label for="No. of children">No. of children</label>
+                <input type="number">
+
+                <label for="Choode your Degrees">Choode your Degrees</label>
+                <select name="degree" id="degree">
+                    <option value="diploma">Diploma</option>
+                    <option value="Bachelore of Science">Bachelore of Science</option>
+                    <option value="Bachelore of arts">Bachelore of arts</option>
+                    <option value="High Diploma">High Diploma</option>
+                </select>
+                <label for="bio">About your self</label>
+                <textarea name="bio" id="bio" cols="200" rows="5"></textarea>
+
+                <label for="Upload your CV">Upload your CV</label>
+                <input type="file">
+
+                <div class="radio">
+                    <h4>matrialsd</h4>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </div>
+                <div class="agrements">
+                    <h3>please read the terms and agreements</h3>
+                    <input type="checkbox"><label for="">I have read all terms </label>
+                    <input type="checkbox"><label for="">yes, i agree </label>
+                </div>
+                <div class="m-top-20">
+                    <button type="submit">Sign in</button>
+                    <button type="reset" id="reset">reset</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="border-primary"></div>
+        <div class="container">
+            <div>
+                <h3>Site map</h3>
+                <li> <a href="index.html">HOME</a>
+                </li>
+                <li> <a href="#">About</a>
+                </li>
+                <li> <a href="#">Contact</a>
+                </li>
+                <li> <a href="#">Login</a>
+                </li>
+            </div>
+            <div>
+                <h3>Terms and Quick Links</h3>
+                <li>Term of usage</li>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </div>
+            <div>
+                <h3>Address and Contact</h3>
+                <li>City, Governorate, Country</li>
+                <li>Phone 0964 000 000 0000</li>
+                <li>Email example@domain.com</li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
