@@ -353,10 +353,14 @@ li {
 
 /* ARTICLES  */
 
+.article .article-paragraph {
+    text-align: justify;
+}
+
 #articles .container .article {
     display: inline-block;
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px #ccc;
 }
@@ -371,27 +375,67 @@ li {
 
 #articles .container .article .article-image {
     border-radius: 5px;
-    height: 400px;
+    height: 500px;
     width: 600px;
 }
 
-#articles .container .article-1 .article-image {
-    background: url(/assets/image/blog-1.jpg) center center/cover;
+
+/* Float */
+
+#float .container .article {
+    display: inline-block;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width: 80%;
 }
 
-#articles .container .article-2 .article-image {
-    background: url(/assets/image/blog-2.jpg) center center/cover;
+#float .container .article:nth-child(even) .article-image {
+    float: left;
 }
 
-#articles .container .article-3 .article-image {
-    background: url(/assets/image/blog-3.jpg) center center/cover;
+#float .container .article:nth-child(odd) .article-image {
+    float: right;
 }
 
-#articles .container h2:hover {
+#float .container .article .article-image {
+    border-radius: 5px;
+    height: 500px;
+    width: 600px;
+}
+
+.container .article .article-image img {
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+#float .container .article .article-image {
+    border-radius: 5px;
+    /* height: 400px;
+    width: 1350px; */
+}
+
+#float .container .blog-sidebar {
+    float: inline-end;
+    background: lemonchiffon;
+    margin-left: 20px;
+    padding: 30px;
+    height: inherit;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.container h2:hover {
     color: var(--primary-color);
 }
 
-#articles .container .article .author h4 {
+.container .article .author h4 {
     color: #a8a8a8;
 }
 
@@ -400,10 +444,87 @@ li {
 }
 
 
+/* Flex */
+
+#flex .container .article {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    flex-direction: column;
+}
+
+#flex .container .article .article-image img {
+    background-size: cover;
+    width: 100%;
+}
+
+#flex .container .article .article-image {
+    border-radius: 5px;
+    /* height: 400px;
+    width: 1350px; */
+}
+
+#flex .container {
+    display: flex;
+}
+
+#flex .container .article-side {
+    flex: 5;
+}
+
+#flex .container .article {
+    padding: 50px;
+}
+
+.author {
+    margin-bottom: 40px;
+}
+
+#flex .container .blog-sidebar {
+    background: lemonchiffon;
+    margin-left: 20px;
+    flex: 1;
+    padding: 30px;
+    height: inherit;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--primary-color);
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.container .blog-sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+/* Grid */
+
+#grid .container .article-side {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#grid .container .article {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+#grid .container .article-image img {
+    margin-bottom: 20px;
+}
+
+
 /* registration */
 
 #registration {
-    height: 2000px;
+    height: 2100px;
 }
 
 #sign-in {
@@ -433,7 +554,7 @@ li {
 }
 
 .sign-up #sign-up-form {
-    height: 1650px;
+    height: 1950px;
 }
 
 .registration label {
@@ -452,7 +573,7 @@ li {
     background: var(--white-color);
 }
 
-.registration div {
+.registration .submit-div {
     display: flex;
     justify-content: space-between;
 }
@@ -465,6 +586,51 @@ li {
 
 .registration div a {
     color: var(--primary-color);
+}
+
+.radio {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+}
+
+#sign-up-form label {
+    /* 525 1457 */
+}
+
+#reset {
+    background: rgba(207, 103, 103, 0.8);
+    color: white;
+}
+
+#color {
+    width: 100%;
+    height: 90px;
+}
+
+
+/* TABLE */
+
+#schedule {
+    height: 2000px;
+}
+
+table {
+    background: white;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+th {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+td {
+    text-align: center;
+    border: 1px solid #ccc;
 }
 
 

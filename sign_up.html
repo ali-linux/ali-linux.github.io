@@ -72,45 +72,55 @@
                 <input type="date">
 
                 <label for="color">Profile Color</label>
-                <input type="color">
-                <div class="radio">
-                    <h4>gender</h4>
-                    <input type="radio" id="Single" name="gender" value="Single">
-                    <label for="male">Single</label><br>
-                    <input type="radio" id="Married" name="gender" value="Married">
-                    <label for="Married">Married</label><br>
-                    <input type="radio" id="it-is-private" name="gender" value="it is private">
-                    <label for="it is private">it is private</label>
+                <input id="color" type="color">
+                <div class="radio m-top-20">
+                    <h4>martial status</h4>
+                    <br>
+                    <div>
+                        <input type="radio" id="Single" name="gender" value="Single">
+                        <label for="male">Single</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Married" name="gender" value="Married">
+                        <label for="Married">Married</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="it-is-private" name="gender" value="it is private">
+                        <label for="it is private">it is private</label>
+                    </div>
                 </div>
                 <label for="No. of children">No. of children</label>
                 <input type="number">
 
-                <label for="Choode your Degrees">Choode your Degrees</label>
-                <select name="degree" id="degree">
-                    <option value="diploma">Diploma</option>
-                    <option value="Bachelore of Science">Bachelore of Science</option>
-                    <option value="Bachelore of arts">Bachelore of arts</option>
-                    <option value="High Diploma">High Diploma</option>
+                <label for="degree">chosse degree:</label>
+
+                <select name="degree" id="degree" multiple>
+                  <option value="Diploma">Diploma</option>
+                  <option value="High Diploma">High Diploma</option>
+                  <option value="Bachilore">Bachilore</option>
+                  <option value="PHD">PHD</option>
                 </select>
                 <label for="bio">About your self</label>
                 <textarea name="bio" id="bio" cols="200" rows="5"></textarea>
 
                 <label for="Upload your CV">Upload your CV</label>
                 <input type="file">
+                <style>
 
-                <div class="radio">
-                    <h4>matrialsd</h4>
+                </style>
+                <div class="radio m-top-20">
+                    <h4 class="m-bottom-20">gender</h4>
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label><br>
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label><br>
                 </div>
-                <div class="agrements">
+                <div class="agrements m-top-20">
                     <h3>please read the terms and agreements</h3>
-                    <input type="checkbox"><label for="">I have read all terms </label>
-                    <input type="checkbox"><label for="">yes, i agree </label>
+                    <input class="m-top-20 m-right-30 m-left-10" type="checkbox"><label for="">I have read all terms </label>
+                    <input class="m-right-30 m-left-10" type="checkbox"><label for="">yes, i agree </label>
                 </div>
-                <div class="m-top-20">
+                <div class="submit-div m-top-20">
                     <button type="submit">Sign in</button>
                     <button type="reset" id="reset">reset</button>
                 </div>
